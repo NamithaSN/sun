@@ -3,91 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone</title>
+    <title>Signup Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .header {
+        .container {
             background-color: #fff;
-            border-bottom: 1px solid #dbdbdb;
-            padding: 10px 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-item {
+            margin-bottom: 15px;
+        }
+        .form-item label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-item input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-item input[type="radio"] {
+            width: auto;
+        }
+        .form-item .gender-block {
             display: flex;
             justify-content: space-between;
-            align-items: center;
         }
-        .header img {
-            height: 40px;
-        }
-        .header input {
-            border: 1px solid #dbdbdb;
-            border-radius: 3px;
-            padding: 5px;
-            width: 200px;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        }
-        .profile img {
-            border-radius: 50%;
-            height: 80px;
-            width: 80px;
-            margin-right: 20px;
-        }
-        .profile-info {
-            display: flex;
-            flex-direction: column;
-        }
-        .profile-info h2 {
-            margin: 0;
-        }
-        .profile-info p {
-            color: #999;
-            margin: 5px 0 0;
-        }
-        .post {
-            background-color: #fff;
-            border: 1px solid #dbdbdb;
-            margin: 20px 0;
-        }
-        .post img {
+        .form-item button {
             width: 100%;
-        }
-        .post .post-info {
             padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
         }
-        .post .post-info h3 {
-            margin: 0;
+        .form-item button:hover {
+            background-color: #0056b3;
         }
-        .post .post-info p {
-            color: #999;
-            margin: 5px 0 0;
+        .form-item a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .form-item a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
-        <input type="text" placeholder="Search">
-    </div>
-    <div class="profile">
-        <img src="https://via.placeholder.com/80" alt="Profile Picture">
-        <div class="profile-info">
-            <h2>Username</h2>
-            <p>Bio goes here...</p>
-        </div>
-    </div>
-    <div class="post">
-        <img src="https://via.placeholder.com/600x400" alt="Post Image">
-        <div class="post-info">
-            <h3>Username</h3>
-            <p>Caption goes here...</p>
-        </div>
+    <div class="container">
+        <form action="">
+            <h1>SIGNUP PAGE</h1>
+            <hr>
+            <div class="form-item">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username">
+            </div>
+            <div class="form-item">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password">
+            </div>
+            <div class="form-item">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-item">
+                <label for="phno">PHONE NO</label>
+                <input type="number" id="phno">
+            </div>
+            <div class="form-item">
+                <label for="DOB">DOB</label>
+                <input type="date" id="DOB">
+            </div>
+            <div class="form-item">
+                <label for="gender">GENDER</label>
+                <div class="gender-block">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <button type="submit">REGISTER</button>
+            </div>
+            <div class="form-item">
+                <a href="#login">ALREADY HAVE ACCOUNT</a>
+            </div>
+        </form>
     </div>
 </body>
 </html>
