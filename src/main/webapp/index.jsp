@@ -3,114 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Welcome to Event Management Co.</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
+        }
+        .header {
+            background-color: #3f51b5;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .nav {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #303f9f;
+        }
+        .nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #3949ab;
         }
         .container {
-            background-color: #fff;
             padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
         }
-        h1 {
-            text-align: center;
-            color: #333;
+        .card h2 {
+            margin-top: 0;
+            color: #3f51b5;
         }
-        .form-item {
-            margin-bottom: 15px;
-        }
-        .form-item label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-        .form-item input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .form-item input[type="radio"] {
-            width: auto;
-        }
-        .form-item .gender-block {
-            display: flex;
-            justify-content: space-between;
-        }
-        .form-item button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 4px;
+        .footer {
+            background-color: #3f51b5;
             color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .form-item button:hover {
-            background-color: #0056b3;
-        }
-        .form-item a {
-            display: block;
             text-align: center;
-            margin-top: 10px;
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .form-item a:hover {
-            text-decoration: underline;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Welcome to Event Management Co.</h1>
+    </div>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
     <div class="container">
-        <form action="">
-            <h1>SIGNUP PAGE</h1>
-            <hr>
-            <div class="form-item">
-                <label for="username">USERNAME</label>
-                <input type="text" id="username">
-            </div>
-            <div class="form-item">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-            </div>
-            <div class="form-item">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email">
-            </div>
-            <div class="form-item">
-                <label for="phno">PHONE NO</label>
-                <input type="number" id="phno">
-            </div>
-            <div class="form-item">
-                <label for="DOB">DOB</label>
-                <input type="date" id="DOB">
-            </div>
-            <div class="form-item">
-                <label for="gender">GENDER</label>
-                <div class="gender-block">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                </div>
-            </div>
-            <div class="form-item">
-                <button type="submit">REGISTER</button>
-            </div>
-            <div class="form-item">
-                <a href="#login">ALREADY HAVE ACCOUNT</a>
-            </div>
-        </form>
+        <div class="card">
+            <h2>Welcome to Our Event Management Company</h2>
+            <p>We specialize in organizing and managing events of all sizes. From corporate events to private parties, we ensure that every event is a memorable experience.</p>
+        </div>
+        <div class="card">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Corporate Events</li>
+                <li>Weddings</li>
+                <li>Private Parties</li>
+                <li>Concerts</li>
+                <li>Conferences</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>About Us</h2>
+            <p>We are a team of experienced event planners dedicated to making your events successful and stress-free. Our mission is to provide exceptional service and create unforgettable experiences.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Event Management Co. All rights reserved.</p>
     </div>
 </body>
 </html>
